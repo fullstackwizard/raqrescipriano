@@ -15,12 +15,9 @@ require_once('./modules/api.php');
     </head>
 
     <body>
-
         <!-- Menu topo do projeto -->
-
         <nav class="flex items-center justify-between flex-wrap bg-purple-500 p-6">
             <div class="flex items-center flex-shrink-0 text-white mr-6">
-
                 <span class="font-semibold text-xl tracking-tight">Sistema Cipriano v1.0</span>
             </div>
             <div class="block lg:hidden">
@@ -40,13 +37,9 @@ require_once('./modules/api.php');
         </nav>
 
         <!-- Lista de Itens consumidos da API -->
-
         <div class="flex flex-wrap items-stretch mb-2 md:px-3 bg-gr">
-
-            <!--Modal Template-->
             <?php foreach ($lists as $list): ?>
                 <div class="w-1/2 lg:w-1/4 mb-4 md:mb-6 pb-0 p-2" data-twcat="HTML">
-
                     <div class="max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
                         <div class="sm:flex sm:items-center px-6 py-4">
                             <img class="block mx-auto sm:mx-0 sm:flex-shrink-0 h-16 sm:h-24 rounded-full" src="<?= $list['avatar']?>" alt="Woman's Face">
@@ -61,35 +54,24 @@ require_once('./modules/api.php');
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <?php endforeach; ?>
-
+             <?php endforeach; ?>
         </div>
 
-        <footer class="bg-gray-700 text-gray-100 px-2 pt-0 pb-2 mt-0">
+        <footer class="bg-purple-500 text-gray-100 px-2 pt-0 pb-2 mt-0">
             <div class="container mx-auto py-8">
-
                 <div class="flex flex-wrap mb-2 px-4">
-                    <!--Col 1-->
                     <div class="w-full md:w-1/3 text-center md:text-left px-3 mb-2 md:mb-0 pb-3 sm:pb-0">
-                        <p class="text-white font-bold text-xl my-3">API Consumer </p>
+                        <p class="text-white font-bold text-xl my-3">API Consumer { reqres.in }</p>
                     </div>
-                    <!--Col 2-->
                     <div class="w-full md:w-1/3 text-center md:text-left px-3 sm:px-1 mb-2 md:mb-0 pb-3 sm:pb-0">
-
                     </div>
-                    <!--Col 3-->
                     <div class="w-full md:w-1/3 text-center md:text-left px-3 sm:px-1 mb-2 md:mb-0 pb-3 sm:pb-0">
-
-                        <p> projeto criado por<a class="footerlink" href="https://github.com/death2k"> Flávio Ribeiro</a></p>
-
+                        <p><a class="footerlink" href="https://github.com/death2k"> Flávio Ribeiro</a></p>
                     </div>
                 </div>
-
             </div>
         </footer>
-
     </body>
 
     </html>
